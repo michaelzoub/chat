@@ -9,7 +9,7 @@ import { opened } from "../components/navbar"
 import { girls, characters } from "../data/aigirls"
 import Image from "next/image"
 
-const preview = false
+const preview = true
 
 const testData = [
     {
@@ -170,7 +170,7 @@ export default function Page() {
   return (
     <AnimatePresence mode='wait'>
     <motion.main className={`w-full min-h-[100dvh] overflow-scroll md:h-screen overflow- ${darkMode ? "bg-neutral-900 text-white" : "bg-neutral-100 text-black"}`}>
-        <Navbar></Navbar>
+        <Navbar preview={preview}></Navbar>
         <audio src="" ref={audioRef}></audio>
         <motion.ul className={`z-[10] fixed min-h-screen inset-0 px-2 text-md pt-[60px] start-0 flex flex-col gap-2 border-[1px] overflow-hidden ${darkMode ? "bg-neutral-800 border-neutral-500" : "bg-neutral-200 border-neutral-300"}`}
           animate={{

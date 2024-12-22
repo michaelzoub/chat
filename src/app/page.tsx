@@ -10,7 +10,7 @@ import Link from "next/link";
 import { motion } from "motion/react"
 import { useEffect, useRef, useState } from "react";
 
-const preview = false
+const preview = true
 
 export default function Home() {
 
@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <motion.main className={`w-full min-h-screen flex flex-col items-center ${dark ? "bg-neutral-900 text-white" : "bg-neutral-100 text-black"}`} ref={widthRef}>
-      <Navbar></Navbar>
+      <Navbar preview={preview}></Navbar>
       <div className={`w-full h-screen backdrop-blur flex flex-col justify-center items-center transition delay-300 ${modalConnect ? "visible" : "hidden"}`}>
         <motion.div className="w-[300px] h-[250px] bg-neutral-700 rounded-md shadow-inner border-[1px] border-neutral-800 p-4 flex flex-col gap-2 text-zinc-400"
           animate={{

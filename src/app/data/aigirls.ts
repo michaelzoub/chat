@@ -60,7 +60,7 @@ export const characters = [
             "https://cdn.discordapp.com/attachments/976997500349186119/1320168419357757571/kafkaj_asian_guy_with_robotic_eye_in_spaceship_nighttime_with_n_b0d0f827-a775-4263-8fb0-5d7b6e988c3b.png?ex=67689e26&is=67674ca6&hm=6bcb21cff6d24ffcb2597f2b645ecfcf50b444149bf3f8caeeebec97a4f2a0b8&"
         ],
         age: 28,
-        boobs: "50 qubit",
+        boobs: "50 Hz",
         voice: "calm and calculated",
         speak: "Stoic, you speak in a measured and logical manner, often offering analytical insights."
     },
@@ -73,7 +73,7 @@ export const characters = [
             "https://cdn.discordapp.com/attachments/976997500349186119/1320168096325173310/kafkaj_alien_light_red_skin_on_a_planet_with_water_night_time_I_84fdd9a2-3a41-4b3b-b812-ea725e54fe63.png?ex=67689dd9&is=67674c59&hm=f49646a38bfa79c61bdebf77e89326495338422fb3b168d5e94353d71a17c0f7&"
         ],
         age: 35,
-        boobs: "275 qubit",
+        boobs: "275 Hz",
         voice: "deep and commanding",
         speak: "Mystical, your words are often philosophical, carrying an air of wisdom from your distant planet."
     },
@@ -86,7 +86,7 @@ export const characters = [
             "https://cdn.discordapp.com/attachments/976997500349186119/1320167174823870554/kafkaj_sleek_futuristic_robot_smooth_black_surface_on_face_unde_d1d85cad-ac91-4c03-a5ab-6fddbc7469cf.png?ex=67689cfd&is=67674b7d&hm=f01b72f52422916248567ebd5ea91a24b44d756b0342f13bbde4ed0c3593feae&"
         ],
         age: 0,
-        boobs: "1,325 qubit",
+        boobs: "1,325 Hz",
         voice: "mechanical and precise",
         speak: "Logical, you speak with clarity and efficiency, focused on gathering facts and solving problems."
     }
