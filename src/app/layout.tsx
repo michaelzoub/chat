@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
-const preview = true
-
-
 const poppins =  Geist({
   weight: ["400", "700"],
   subsets: ["latin"]
