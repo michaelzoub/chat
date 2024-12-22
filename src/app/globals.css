@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .header-background {
+    background: linear-gradient(270deg, 
+      rgba(228, 76, 149, 0.55), 
+      rgba(161, 150, 202, 0.55),  
+      rgba(74, 86, 255, 0.55),   
+      rgba(121, 140, 255, 0.55), 
+      rgba(149, 56, 255, 0.55)       
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 10s infinite;
+  }
+
+  .header-background-preview {
+    background: linear-gradient(270deg, 
+      rgba(255, 182, 182, 0.55), /* Light red */
+      rgba(255, 255, 255, 0.55), /* White */
+      rgba(169, 169, 169, 0.55), /* Light black (gray) */
+      rgba(128, 128, 128, 0.55), /* Darker gray for depth */
+      rgba(105, 105, 105, 0.55)  /* Even darker gray */
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 10s infinite;
+  }
