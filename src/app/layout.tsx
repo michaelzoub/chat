@@ -10,20 +10,9 @@ const poppins =  Geist({
   subsets: ["latin"]
 })
 
-const hentaiObj = {
-  title: "Ecchi",
-  description: "Chat with your favorite ecchi AI agents!",
-}
-
-const spaceObj = {
+export const metadata: Metadata = {
   title: "Space",
   description: "Chat with your favorite space AI agents!",
-}
-
-export const metadata: Metadata = {
-  
-    ...preview ? hentaiObj : spaceObj
-  
 };
 
 export default function RootLayout({
