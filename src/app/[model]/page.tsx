@@ -307,7 +307,7 @@ export default function Page() {
                                         stiffness: 350,
                                         damping: 20
                                     }}
-                                    className={`p-2 rounded-md gap-2 w-fit max-w-[40%] ${item.message == "🎤︎" ? "" : ""} ${item.role === "user" ? `${preview ? "bg-orange-400" : "bg-blue-500"} self-end` : `${preview ? "bg-red-400" : "bg-pink-300"}`}`} 
+                                    className={`p-2 rounded-md gap-2 w-fit max-w-[40%] ${item.message == "🎤︎" ? "" : ""} ${item.role === "user" ? `${preview ? "bg-blue-500" : "bg-blue-500"} self-end` : `${preview ? "bg-red-400" : "bg-pink-300"}`}`} 
                                 >
                                     <h1 className="break-words">{item.message}</h1>
                                 </motion.div>

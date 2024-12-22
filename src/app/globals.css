@@ -48,12 +48,12 @@ body {
 
   .header-background-preview {
     background: linear-gradient(270deg, 
-      rgba(255, 182, 182, 0.55), /* Light red */
-      rgba(255, 255, 255, 0.55), /* White */
-      rgba(169, 169, 169, 0.55), /* Light black (gray) */
-      rgba(128, 128, 128, 0.55), /* Darker gray for depth */
-      rgba(105, 105, 105, 0.55)  /* Even darker gray */
-    );
+    rgba(255, 0, 0, 0.4), /* Neon Red */
+    rgba(255, 50, 50, 0.4), /* Light Red */
+    rgba(169, 50, 50, 0.4), /* Light Red Gray */
+    rgba(128, 0, 0, 0.4), /* Dark Red */
+    rgba(105, 0, 0, 0.4)  /* Darker Red */
+  );
     background-size: 400% 400%;
     animation: gradientMove 10s infinite;
   }
