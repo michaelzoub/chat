@@ -57,3 +57,17 @@ body {
     background-size: 400% 400%;
     animation: gradientMove 10s infinite;
   }
+
+  .gradient-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Cover the entire div */
+    z-index: 1; /* Ensure it overlays the content */
+    background: linear-gradient(
+      to top, 
+      rgba(0, 0, 0, 1) 10%, /* Black at the bottom 10% */
+      rgba(0, 0, 0, 0) 30%  /* Fully transparent by 30% */
+    );
+    border-radius: inherit; /* Match the border radius of the parent */
+    pointer-events: none; /* Allow clicks through the gradient */
+  }

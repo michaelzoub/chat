@@ -115,7 +115,8 @@ export default function Home() {
       <div className={`flex w-full h-[300px] mt-[50px] items-center justify-center items-center ${preview ? "bg-[url('https://cdn.discordapp.com/attachments/976997500349186119/1320170540933058703/kafkaj_1980_x_800_space_landscape_In_the_style_of_Moebius_the_a_be8a0df1-18cf-4f16-87c5-68818161ae0b.png?ex=6768a020&is=67674ea0&hm=93bc8a6adae98220b9be613534b048311e041221c22eea658b44c1f327288faf&')]" : "bg-[url('/bg.jpeg')]"} bg-contain bg-cover bg-no-repeat bg-center ${dark ? "bg-neutral- text-white" : "bg-neutral- text-white"}`}>
           <div className={`w-full h-full flex items-center justify-center inset-0 ${preview ? "header-background-preview bg-neutral-900/10" : "header-background bg-neutral-900/70"}`}>
           <h1 className="w-[400px] text-4xl sm:text-4xl font-semibold text-center">
-         { preview ? <div><span className="text-red-400">AI CHAT</span> DISCOVER THE FUTURE.</div> : <div><span className="text-pink-400">AI HENTAI</span> MEMECOIN BY ECCHI</div> }
+         { preview ? <div className="flex flex-col w-fit w-[270px] gap-4"><span className="mx-auto w-fit self-left text-neutral-300 text-xs p-[4px] px-[10px] rounded-xl bg-neutral-600">AI CHAT</span> DISCOVER THE FUTURE.</div> : <div><span className="text-pink-400">AI HENTAI</span> MEMECOIN BY ECCHI</div> }
+         <div className="hidden text-[11px] font-medium text-neutral-300">Experience the next generation of AI communication with our advanced agents.</div>
           </h1>
           </div>
       </div>
@@ -125,7 +126,7 @@ export default function Home() {
           {
             (preview ? characters : girls)?.map((e) => 
               <Link href={`${e.name == "Mika" ? "" : `/${e.name}`}`} key={e.name}>
-                <motion.div className="mx-auto h-[500px] w-[300px] md:w-[350px] flex flex-col justify-between relative text-white rounded-md"
+                <motion.div className="mx-auto h-[500px] w-[300px] md:w-[350px] flex flex-col justify-between relative text-white rounded-md gradient-overlay"
                   whileTap={{ scale: 1.04 }}
                   whileHover={{ 
                     scale: 1.02,
@@ -135,8 +136,8 @@ export default function Home() {
                   }}
                 >
                   <div className={`${e.name == "Mika" ? "hidden" : "flex flex-row justify-between w-full z-[1]"}`}>
-                    <div className="p-[6px] px-3 bg-red-500 text-white rounded-md h-fit m-2 font- text-sm shadow-sm shadow-red-500/50">● Live</div>
-                    <Link className="end-0 m-2 bg-neutral-800 px-3 py-2 rounded-full transition ease-in-out delay-150 hover:bg-neutral-900 text-md" href={e.name}>✉</Link>
+                    <div className="p-[4px] px-3 bg-red-500 text-white rounded-md h-fit m-2 font- text-sm shadow-sm shadow-red-500/50">● Live</div>
+                    <Link className="end-0 m-2 bg-neutral- px-3 py-2 rounded-full transition ease-in-out delay-150 hover:bg-neutral-900 text-md" href={e.name}>✉</Link>
                   </div>
                   <div className={`${e.name == "Mika" ? "w-fit h-fit p-2 px-3 rounded-md bg-neutral-600 font- text-sm m-2 z-[1]" : "hidden"}`}>Beta testing</div>
                   <div className={`z-[1] text-xl font-semibold text-neutral-300 ${e.name == "Mika" ? "text-center" : "hidden"}`}></div>
